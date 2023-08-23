@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topit - Transactions</title>
+  <link rel="stylesheet" href="/stylesheets/dashboard.css">
+  <link rel="stylesheet" href="/stylesheets/transactions.css">
+</head>
+
+<body>
+  <section class="whole">
+    <section class="nav_section">
+      <nav class="nav_vertical">
+        <h1 class="topit">TopiT</h1>
+        <ul>
+          <li class="navlist"><a href="/account/dashboard">Dashboard</a></li>
+          <li class="navlist"><a href="/account/recharge-airtime">Recharge</a></li>
+          <li class="navlist"><a href="/account/recharge-data">Buy data</a></li>
+          <li class="navlist1"><a href="/account/transactions">Transactions</a></li>
+          <li class="navlist"><a href="/account/fund-wallet">Add funds</a></li>
+          <li class="navlist"><a href="/account/withdraw">Withdraw funds</a></li>
+        </ul>
+      </nav>
+      <nav class="nav_btm">
+        <img class="navpix" src="/images/pic.png" alt="profilepix">
+        <a class="profilename" href="/account/profile">
+          <h4>My Profile</h4>
+        </a>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="section_nav_main">
+      <nav class="nav_main">
+        <div class="pix_name">
+          <img class="top_nav_pix" src="/images/pic.png" alt="profilepix">
+          <p><%= username %></p>
+        </div>
+        <form action="/account/logout" method="post">
+          <input type="submit" value="LOGOUT"/>
+        </form>
+      </nav>
+      <main class="main">
+        <section class="transactions">
+          <div class="transactions_head">
+            <h3>Recent transactions</h3>
+            <a href="#">view all</a>
+          </div>
+          <div class="each_transaction">
+            <div class="success_failure_date">
+              <img class="success_failure" src="/images/success_icon.png" alt="success_tick_pix">
+              <div class="added_date">
+                <h4>
+                  <%= desc[0] %>
+                </h4>
+                <p>
+                  <%= date[0] %>
+                </p>
+              </div>
+            </div>
+            <div class="dollar_success">
+              <h4>₦<%= amt[0] %>
+              </h4>
+              <p>success</p>
+            </div>
+          </div>
+          <hr>
+          <div class="each_transaction">
+            <div class="success_failure_date">
+              <img class="success_failure" src="/images/success_icon.png" alt="success_tick_pix">
+              <div class="added_date">
+                <h4>
+                  <%= desc[1] %>
+                </h4>
+                <p>
+                  <%= date[1] %>
+                </p>
+              </div>
+            </div>
+            <div class="dollar_success">
+              <h4>₦<%= amt[1] %>
+              </h4>
+              <p>success</p>
+            </div>
+          </div>
+          <hr>
+          <div class="each_transaction">
+            <div class="success_failure_date">
+              <img class="success_failure" src="/images/success_icon.png" alt="success_tick_pix">
+              <div class="added_date">
+                <h4>
+                  <%= desc[2] %>
+                </h4>
+                <p>
+                  <%= date[2] %>
+                </p>
+              </div>
+            </div>
+            <div class="dollar_success">
+              <h4>₦<%= amt[2] %>
+              </h4>
+              <p>success</p>
+            </div>
+          </div>
+          <hr>
+          <div class="each_transaction">
+            <div class="success_failure_date">
+              <img class="success_failure" src="/images/success_icon.png" alt="success_tick_pix">
+              <div class="added_date">
+                <h4>
+                  <%= desc[3] %>
+                </h4>
+                <p>
+                  <%= date[3] %>
+                </p>
+              </div>
+            </div>
+            <div class="dollar_success">
+              <h4>₦<%= amt[3] %>
+              </h4>
+              <p>success</p>
+            </div>
+          </div>
+          <hr>
+        </section>
+      </main>
+    </section>
+  </section>
+  <footer>
+    <!-- Add footer content here -->
+  </footer>
+  <script src="/javascript/index.js"></script>
+</body>
+
+</html>

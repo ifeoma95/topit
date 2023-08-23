@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TopiT - Buy Airtime</title>
+  <link rel="stylesheet" href="/stylesheets/dashboard.css">
+</head>
+
+<body>
+  <section class="recharge_whole">
+    <section class="nav_section">
+      <nav class="nav_vertical">
+        <h1 class="topit">TopiT</h1>
+        <ul>
+          <li class="navlist"><a href="/account/dashboard">Dashboard</a></li>
+          <li class="navlist1"><a href="/account/recharge-airtime">Recharge</a></li>
+          <li class="navlist"><a href="/account/recharge-data">Buy data</a></li>
+          <li class="navlist"><a href="/account/transactions">Transactions</a></li>
+          <li class="navlist"><a href="/account/fund-wallet">Add funds</a></li>
+          <li class="navlist"><a href="/account/withdraw">Withdraw funds</a></li>
+        </ul>
+      </nav>
+      <nav class="nav_btm">
+        <img class="navpix" src="/images/pic.png" alt="profilepix">
+        <a class="profilename" href="/account/profile">
+          <h4>My Profile</h4>
+        </a>
+        </ul>
+      </nav>
+    </section>
+    <section>
+      <nav class="nav_main">
+        <div class="pix_name">
+          <img class="top_nav_pix" src="/images/pic.png" alt="profilepix">
+          <p><%= username %></p>
+        </div>
+        <form action="/account/logout" method="post">
+          <input type="submit" value="LOGOUT"/>
+        </form>
+      </nav>
+      <form class="recharge_page_section2" method="post" action="">
+        <div class="recharge_data_pay">
+          <h3>Recharge your line</h3>
+          <div class="network_option_all">
+            <label class="network_option">
+              <input type="radio" name="serviceProvider" value="mtn">
+              <img class="network_logo" src="/images/mtn.png" alt="Mtn_logo">
+            </label>
+            <label class="network_option">
+              <input type="radio" name="serviceProvider" value="airtel">
+              <img class="network_logo" src="/images/airtel.png" alt="Airtel_logo">
+            </label>
+            <label class="network_option">
+              <input type="radio" name="serviceProvider" value="glo">
+              <img class="network_logo" src="/images/glo.png" alt="Glo_logo">
+            </label>
+            <label class="network_option">
+              <input type="radio" name="serviceProvider" value="9mobile">
+              <img class="network_logo" src="/images/9mobile.png" alt="9mobile_logo">
+            </label>
+          </div>
+        </div>
+        <!-- <div class="recharge_page_logo">
+            <img src="/images/mtn.png" alt="Line_logo">
+            <h3>Recharge your MTN line</h3>
+          </div> -->
+        <div class="enter_phone">
+          <div class="enter">
+            <input name="phone" type="tel" id="phone_number" placeholder="Enter your phone number to recharge"
+              pattern="[0-9]{11}" required>
+          </div>
+        </div>
+        <div class="enter_amount">
+          <div class="enter">
+            <input name="amount" type="number" id="amount" placeholder="Enter recharge amount">
+          </div>
+        </div>
+
+        <button type="submit">Recharge</button>
+      </form>
+    </section>
+  </section>
+  <script src="/javascript/index.js"></script>
+</body>
+
+</html>
+
+</html>

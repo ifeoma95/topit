@@ -1,0 +1,68 @@
+.container {
+    min-height: 100vh;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    text-align: center; 
+    max-width: 100%;
+    background-image: url("https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/draw1.webp");
+    border-radius: 20px;   
+}
+
+.details {
+  flex: 1;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 50%;
+  text-align: center;
+  background-color:#77777766;
+  margin:auto;
+}
+
+.signUpImage {
+    flex: 1;
+    padding: 20px;
+    text-align: center; 
+    max-width: 100%;
+    border-radius: 25px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #2657a1;
+}
+
+h2 {
+  color: #2657a1;
+  margin-bottom: 30px;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    /* display: block; */
+    width: 50%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signin {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+
+
+

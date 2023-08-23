@@ -1,0 +1,88 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+}
+.allSuccess {
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-shadow: 7px 7px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.allSuccess img {
+    width: 80%;
+    margin-top: 20px; /* Adjust this value as needed */
+}
+
+.allSuccess h1 {
+    margin-top: 10px;
+    color: rgb(4, 152, 4);
+    margin-bottom: 0;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.allSuccess p {
+    margin-top: 5px;
+}
+
+.buttons{
+    margin-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+button{
+padding: 10px;
+background-color: #016993ff;
+cursor: pointer;
+color: #fff;
+border: #fff;
+border-radius: 5px;
+}
+
+button:first-child {
+    margin-right: 10px; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+button:last-child {
+    margin-left: 10px; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .allSuccess {
+        width: 50%;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 70px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+     .allSuccess img {
+        width: 80%;
+        margin-top: 10px; /* Adjust this value as needed */
+        }
+    .allSuccess h1 {
+        margin-top: -40px;
+        color: rgb(4, 152, 4);
+        margin-bottom: 0;
+    }
+}
+
+
+
+

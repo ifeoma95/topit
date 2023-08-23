@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TopiT - Fund Wallet</title>
+  <link rel="stylesheet" href="/stylesheets/dashboard.css">
+  <link rel="stylesheet" href="/stylesheets/add_withdraw.css">
+
+</head>
+
+<body>
+  <section class="whole_page">
+    <section class="nav_section">
+      <nav class="nav_vertical">
+        <h1 class="topit">TopiT</h1>
+        <ul>
+          <li class="navlist"><a href="/account/dashboard">Dashboard</a></li>
+          <li class="navlist"><a href="/account/recharge-airtime">Recharge</a></li>
+          <li class="navlist"><a href="/account/recharge-data">Buy data</a></li>
+          <li class="navlist"><a href="/account/transactions">Transactions</a></li>
+          <li class="navlist1"><a href="/account/fund-wallet">Add funds</a></li>
+          <li class="navlist"><a href="/account/withdraw">Withdraw funds</a></li>
+        </ul>
+      </nav>
+      <nav class="nav_btm">
+        <img class="navpix" src="/images/pic.png" alt="profilepix">
+        <a class="profilename" href="/account/profile">
+          <h4>My Profile</h4>
+        </a>
+        </ul>
+      </nav>
+    </section>
+    <section class="section_nav_main">
+      <nav class="nav_main">
+        <div class="pix_name">
+          <img class="top_nav_pix" src="/images/pic.png" alt="profilepix">
+          <p><%= username %></p>
+        </div>
+        <form action="/account/logout" method="post">
+          <input type="submit" value="LOGOUT"/>
+        </form>
+      </nav>
+      <form class="addfunds" method="post" action="/account/fund-wallet">
+        <h3>Top up your TopiT wallet</h3>
+        <div class="amount_one">
+          <p>Enter the amount to top up</p>
+          <input type="number" id="amount" placeholder="Amount" name="amount">
+        </div>
+        <button type="submit">Top up</button>
+      </form>
+    </section>
+  </section>
+</body>
+
+</html>

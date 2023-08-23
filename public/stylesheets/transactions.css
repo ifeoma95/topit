@@ -1,0 +1,37 @@
+.transactions{
+    width: 80%;
+    margin-top: 20px;
+    padding: 20px;
+  }
+  
+  .transactions_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .each_transaction{
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  }
+
+  .success_failure_date{
+    display: flex;
+    align-items: center;
+  }
+  .added_date{
+    padding-left: 12%;
+    line-height: 2px;
+  }
+  .dollar_success{
+    line-height: 2px; 
+    width: 25%;
+  }
+  
+  .dollar_success p{
+    color: #4bc83d;
+  }
+  .success_failure {
+    width: 10%;
+  }

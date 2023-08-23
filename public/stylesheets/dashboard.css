@@ -1,0 +1,582 @@
+
+/* Set the base styling for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Hide the navigation section */
+.nav_section {
+  display: none;
+  min-height: 100vh;
+}
+.topit{
+  font-size: xx-large;
+  margin-left: 20%;
+}
+/* Remove the default bullet points from unordered lists */
+ul {
+  list-style: none;
+}
+
+/* Set the margins for the summary section */
+.summary_section {
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+/* Styling for the wallet balance section */
+.wallet-balance {
+  background-color: rgb(255, 123, 93);
+  padding: 7% 12% 1%;
+  color: rgb(255, 243, 243);
+  border-radius: 20px;
+}
+
+/* Set the font size for the total balance */
+.total_balance {
+  font-size: medium;
+}
+
+/* Set the font size and margin for the four hundred value */
+.four_hundred {
+  margin-top: -2%;
+  font-size: xx-large;
+}
+
+
+.utility_section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.utility_logo_div{
+  background-color: rgb(219, 233, 247);
+  border-radius: 8px;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  cursor: pointer; 
+}
+
+.utility_logo_div :hover{
+  width: 100%; 
+  padding: 10%;
+  transition: width 0.3s, padding 0.3s;
+}
+
+.utility_logo{
+  width: 60%; 
+  padding: 20%;
+}
+.add_funds_section{
+  display: flex;
+}
+.add_funds1 {
+  border: 1px solid rgb(255, 123, 93);
+  box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px 3%;
+  text-align: center;
+  padding: 30px 8%;
+  width: 30%;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.771);
+}
+.add_funds2 {
+  border: 1px solid rgb(255, 123, 93);
+  box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px 3%;
+  text-align: center;
+  padding: 30px 8%;
+  width: 30%;
+  text-decoration: none;
+}
+
+.funds_img {
+  width: 90%;
+  margin-left: 5%;
+}
+.transactions{
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.transactions_head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.each_transaction{
+display: flex;
+justify-content: space-between; 
+align-items: center;
+}
+
+.nav_main{
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-left: 35%;
+  align-items: center;
+}
+.nav_main button {
+  height: 30px;
+  cursor: pointer;
+}
+.pix_name{
+  display: flex;
+  align-items: center;
+}
+.pix_name p{
+  cursor: pointer;
+}
+
+.top_nav_pix {
+  width: 40%;
+}
+
+/* Styling for the success and failure icon */
+.success_failure_date{
+  display: flex;
+  align-items: center;
+}
+.added_date{
+  padding-left: 12%;
+  line-height: 2px;
+}
+.dollar_success{
+  line-height: 2px; 
+  width: 25%;
+}
+
+.dollar_success p{
+  color: #4bc83d;
+}
+.success_failure {
+  width: 10%;
+}
+/* Styling for the recharge and data pay section */
+.recharge_page_section2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.recharge_data_pay {
+  background-color: rgb(255, 123, 93);
+  padding: 5% 8%;
+  margin-top: 100px;
+  color: rgb(255, 243, 243);
+  margin-bottom: 40px;
+}
+
+.recharge_data_pay  h3{
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 20px;
+ 
+}
+
+.network_option_all{
+  display: flex;
+  justify-content: space-between;
+}
+
+.network_option{
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  max-height: 70px;
+}
+
+.network_logo{
+  width: 50%; 
+}
+
+/* Styling the Recharge Page */
+
+
+.recharge_page_logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.recharge_page_logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.recharge_page_logo h3 {
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.recharge_page_section2 label {
+  font-size: 16px;
+}
+.enter_phone{
+  width: 100%;
+}
+.enter_amount{
+  width: 100%;
+}
+
+.enter{
+  margin-bottom: 40px;
+}
+.recharge_page_section2 input[type="tel"],
+input[type="number"] {
+  width: 95%; 
+  padding: 20px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+.recharge_page_section2 h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+.rechargeDiv{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px; 
+  width: 100%;
+  margin-bottom: 10px;
+}
+.choose_amount{
+  margin-bottom: 0px;
+}
+.rechargeDiv h4{
+  flex: 0 0 20%;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.recharge-amount {
+  font-size: 14px;
+  margin: 5px 0;
+  color:#016993ff;
+  cursor: pointer; 
+  background-color: rgb(255, 123, 93);
+  text-align: center;
+  height: 25px;
+}
+
+.recharge-amount:hover {
+  background-color: rgb(192, 144, 133);
+}
+
+.recharge_page_section2 button {
+  width: 100%;
+  padding: 20px 20px;
+  font-size: 18px;
+  background-color: #016993ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.recharge_page_section2 button:hover {
+  background-color:rgb(255, 123, 93);
+}
+
+@media screen and (min-width: 768px) {
+
+  .whole{
+  display: flex;
+  justify-content: space-between;
+  }
+  /* Show the navigation section for larger screens */
+  .nav_section {
+    display: block;
+    width: 15%;
+    background-color: rgb(6, 6, 50);
+    color: aliceblue;
+  }
+  ul a:hover {
+    background-color: rgb(255, 123, 93);
+    cursor: pointer; 
+    color: aliceblue;
+    padding: 15px;
+    border-radius: 50px;
+  }
+  .profilename :hover {
+    background-color: rgb(255, 123, 93);
+    cursor: pointer; 
+    color: aliceblue;
+    padding: 15px;
+    border-radius: 50px;
+  }
+  .nav_vertical a {
+    text-decoration: none;
+    cursor: pointer; 
+    color: aliceblue;
+  }
+  .navlist{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    border-radius: 50px 0 0 50px;
+  }
+  .navlist1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 5%;
+    border-radius: 50px 0 0 50px;
+    background-color: rgb(255, 123, 93);
+  }
+  .nav_btm{
+    margin-top: 80%;
+    padding-left: 20px;
+    margin-left: 20%; 
+  }
+
+  .nav_btm a{
+   text-decoration: none;
+   color: aliceblue;
+  }
+  
+  .navpix{
+    width: 50%;
+    border-radius: 50%;
+  }
+  .section_nav_main{
+    margin-left: 3%;
+    width: 80%;
+  }
+  .nav_main{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4%;
+    width: 20%;
+    margin-left: 76%;
+  }
+  .nav_main button {
+    height: 40px;
+   padding-left: 30%;
+   padding-right: 30%;
+  }
+  .pix_name{
+    display: flex;
+  }
+
+  .top_nav_pix {
+    width: 30%;
+  }
+  .main{
+    display: flex;
+  }
+  
+  .summary_section {
+    margin-left: 0;
+    width: 35%;
+    margin-top: -2%;
+    margin-right: 4%;
+  }
+  .summary_section h2 {
+    margin-left: 3%;
+  }
+
+  .transaction_funds-section{
+    width: 65%;
+  }
+  
+  .wallet-balance {
+    padding: 1% 4%;
+  }
+
+  .total_balance {
+    font-size: large;
+  }
+
+  .four_hundred {
+    margin-top: -1%;
+    font-size: x-large;
+  }
+
+  .recharge_data_pay {
+    padding: 5% 4%;
+  }
+
+  .add_funds1 {
+    border: 1px solid rgb(255, 123, 93);
+    box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.2);
+    margin: 6%;
+    margin-left: 10%;
+    margin-right: 5%;
+    text-align: center;
+    padding: 30px 8%;
+    width: 20%;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .add_funds_section :hover {
+    background-color: rgb(255, 123, 93);
+   transition: width 1s, padding 0.3s;
+  }
+  .add_funds2 {
+    border: 1px solid rgb(255, 123, 93);
+    box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.2);
+    margin: 6%;
+    margin-left: 5%;
+    margin-right: 10%;
+    text-align: center;
+    padding: 30px 8%;
+    width: 20%;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .funds_img {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .transactions {
+    margin-left: 5%;
+    margin-right: 10%;
+  }
+
+  /* Adjust the font size for the transactions header */
+  .transactions_head {
+    font-size: 15px;
+    font-weight:normal;
+  }
+  .transactions_head a {
+   text-decoration: none;
+  }
+
+  /* Adjust the font size for each transaction item */
+  .each_transaction {
+    font-size: 18px;
+  }
+
+  /* Adjust the width of the profile picture */
+  .success_failure {
+    width: 10%;
+  }
+  .added_date{
+   font-size: small;
+  }
+
+  /* Adjust the width of the success and failure icon */
+  .dollar_success{
+    width: 3%;
+    margin-right: 7%;
+    font-size: small;
+  }
+
+  /* styling for recharge page */
+  .recharge_whole{
+    display: flex;
+    }
+
+    .recharge_page_section2 {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      /* padding: 10px; */
+      width: 60%;
+      margin-left: 18%;
+      /* margin-right: 20%; */
+      border: 1px solid rgb(255, 123, 93);
+      box-shadow: 10px 7px 4px rgba(0, 0, 0, 0.2);
+    }
+
+    /* .rechargeDiv{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 10px; 
+      width: 90%;
+      margin-bottom: 10px;
+      margin-left: 5%; 
+    } */
+
+    /* .rechargeDiv h4{
+      flex: 0 0 10%;
+      padding: 15px;
+      border-radius: 10px;
+    } */
+    .enter{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 90%;
+      margin-left: 5%; 
+    }
+
+  .enter input[type="tel"],
+input[type="number"] {
+  width:100%; 
+  padding: 20px 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 7px 7px 4px rgba(0, 0, 0, 0.2);
+}
+
+.form button {
+  width: 40%;
+  padding: 20px 20px;
+  font-size: 18px;
+  background-color: #016993ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 5%;  
+  margin-right: 5%;
+}
+
+
+.recharge_data_pay {
+  background-color: rgb(255, 123, 93);
+  padding: 5% 8%;
+  margin-top: 40px;
+  color: rgb(255, 243, 243);
+  margin-bottom: 40px;
+  width: 75%;
+}
+
+.recharge_data_pay  h3{
+  text-align: center;
+  margin-top: 10px;
+  padding-bottom: 20px;
+ 
+}
+
+.network_option_all{
+  display: flex;
+  justify-content: space-between;
+}
+
+.network_option{
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  max-height: 70px;
+}
+
+.network_logo{
+  width: 50%; 
+}
+}

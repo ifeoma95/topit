@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Topit - Successful</title>
+  <link rel="stylesheet" href="/stylesheets/dashboard.css">
+  <link rel="stylesheet" href="/stylesheets/success.css">
+</head>
+
+<body>
+  <section class="whole">
+    <section class="nav_section">
+      <nav class="nav_vertical">
+        <h1 class="topit">TopiT</h1>
+        <ul>
+          <li class="navlist"><a href="/account/dashboard">Dashboard</a></li>
+          <li class="navlist"><a href="/account/recharge-airtime">Recharge</a></li>
+          <li class="navlist"><a href="/account/recharge-data">Buy data</a></li>
+          <li class="navlist"><a href="/account/transactions">Transactions</a></li>
+          <li class="navlist"><a href="/account/fund-wallet">Add funds</a></li>
+          <li class="navlist"><a href="/account/withdraw">Withdraw funds</a></li>
+        </ul>
+      </nav>
+      <nav class="nav_btm">
+        <img class="navpix" src="/images/pic.png" alt="profilepix">
+        <a class="profilename" href="/account/profile">
+          <h4>My Profile</h4>
+        </a>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="section_nav_main">
+      <nav class="nav_main">
+        <div class="pix_name">
+          <img class="top_nav_pix" src="/images/pic.png" alt="profilepix">
+          <p>
+            <%=username%>
+          </p>
+        </div>
+        <form action="/account/logout" method="post">
+          <input type="submit" value="LOGOUT"/>
+        </form>
+      </nav>
+            <div class="allSuccess">
+                <img src="/images/thumb.jpeg" alt="sucess-image">
+                <h1>Transaction Successful !</h1>
+                <p>Thank you for always believing us</p>
+                <div class="buttons">
+               <a href="<%= back %>"><button type="button">Back</button></a> 
+               <a href="/account/dashboard"><button type="button">Dashboard</button></a> 
+                </div>
+            </div>
+    </section>
+  </section>
+  <footer>
+    <!-- Add footer content here -->
+  </footer>
+  <script src="/javascript/index.js"></script>
+</body>
+
+</html>
